@@ -26,7 +26,7 @@ class DrawInformation:
     SIDE_PAD = 100
     TOP_PAD = 150
 
-    # Define and initialization
+    # Here we define the data initialization
 
     def __init__(self, width, height, list):
         self.width = width
@@ -47,7 +47,9 @@ class DrawInformation:
         self.start_x = self.SIDE_PAD // 2
 
 # A function to genenrate a starting list because we need a starting list to actually sort the algorithm
+
 # Where n is the number of elements we want in our list
+
 def draw(draw_info, algo_name, ascending):
     draw_info.window.fill(draw_info.BACKGROUND_COLOR)
     pygame.display.update()
@@ -65,7 +67,7 @@ def draw_list(draw_info,color_positions={}, clear_bg=False):
     list = draw_info.list
 
     if clear_bg:
-        #clear_rect = (draw_info.SIDE_PAD // 2, draw_info.width - draw_info.SIDE_PAD, draw_info.height - draw_info.TOP_PAD)
+        #clear_rect = (draw_info.SIDE_PAD // 2, draw_info.width - draw_info.SIDE_PAD, draw_info.height - draw_info.TOP_PAD)                 # COMMENTED OUT LINE
         clear_rect = (
             draw_info.SIDE_PAD // 2,
             draw_info.TOP_PAD,
