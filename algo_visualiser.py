@@ -48,7 +48,7 @@ class DrawInformation:
 
 # A function to genenrate a starting list because we need a starting list to actually sort the algorithm
 
-# Where n is the number of elements we want in our list
+# Where n is the number of elements we want on our list
 
 def draw(draw_info, algo_name, ascending):
     draw_info.window.fill(draw_info.BACKGROUND_COLOR)
