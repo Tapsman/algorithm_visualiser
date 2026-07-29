@@ -4,7 +4,7 @@ import random
 import math
 pygame.init()
 
-# Define global values as class attributes
+# First we define the global attributes
 
 class DrawInformation:
     BLACK = 0, 0, 0
@@ -114,7 +114,7 @@ def bubble_sort(draw_info, ascending=True):
     return list
 
     next()
-# I want to see my window so i'll create a function called main
+# To show thw window
 def main():
     run = True
     clock = pygame.time.Clock()
